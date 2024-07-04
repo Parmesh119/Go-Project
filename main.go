@@ -4,11 +4,17 @@ import (
 	"fmt"
 )
 
+import (
+	"booking_app/Greet"
+	"booking_app/UserInput"
+)
+
 // Welcoming user
 var ConferenceName string = "Go Conference"
 
 // Initializing tickets
 const ConferenceTicket uint = 50
+
 var RemainingTicket uint = ConferenceTicket
 
 // Declaring Slice
@@ -17,7 +23,7 @@ var bookings = []string{}
 func main() {
 
 	// GREETING
-	fmt.Print(greet())
+	fmt.Print(Greet.Welcome())
 
 	// showing details
 	fmt.Printf("We have %d number of total ticket and remaining tickets are %v\n", ConferenceTicket, RemainingTicket)
@@ -26,7 +32,7 @@ func main() {
 	for i := 0; i < int(ConferenceTicket); i++ {
 
 		// User input
-		firstName, lastName, userEmail, userTickets := User_input()
+		firstName, lastName, userEmail, userTickets := UserInput.User_input()
 
 		// Remaining Tickets
 		Remaining_Ticket := Remaining_Ticket(userTickets)
