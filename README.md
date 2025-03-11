@@ -64,10 +64,10 @@ The developer of go is attempt to combine both
 - create new module
 - It initialized a go.mod file 
 
-# Every thing is organized into the packages in go
-# The main function is the entry point in go program and only have one main function in every go file
-# Go packages is like container and It gives you various functionality that we can directly use into our code
-# There are 25 keywords in go
+#### Every thing is organized into the packages in go
+#### The main function is the entry point in go program and only have one main function in every go file
+#### Go packages is like container and It gives you various functionality that we can directly use into our code
+#### There are 25 keywords in go
 
 # First Go program:
 
